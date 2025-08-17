@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MusicPhile</title>
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      width: 100%;
+      height: 100%;
+      background-color: rgb(6, 2, 8);
+      font-family: sans-serif;
+    }
+
+    .container {
+      background-color: bisque;
+    }
+
+    nav ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      list-style: none;
+      padding: 20px;
+    }
+
+    .nav-1 {
+      background-color: rgb(242, 43, 189);
+    }
+
+    .nav-2 {
+      background-color: rgb(240, 139, 15);
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 10px;
+      /* background-color: rgb(232, 76, 9); */
+      padding: 10px;
+    }
+
+    .item {
+      background-color: chocolate;
+      border: 2px solid black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .item img {
+      width: 100%;
+      height: 100%;
+      object-fit:fill;
+    }
+
+    /* .item-1 {
+      grid-column: span 2;
+      grid-row: span 2;
+    } */
+
+    h2 {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: #592828;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 600px) {
+      nav ul {
+        /* flex-direction: column; */
+        gap: 5px;
+      }
+
+      /* .item-1 {
+        grid-column: span 1;
+        grid-row: span 1;
+      } */
+    }
+    a{
+        text-decoration: none;
+        color: aliceblue;
+    }
+    a:hover,button:hover{
+        color: rgb(18, 229, 158);
+    }
+    .logo{
+        border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav class="nav-1">
+      <ul>
+        <li><a href="#">Search</a></li>
+        <li><img src="../images/logo.jpg" alt="Logo" class="logo" width="70px"></li>
+        <li><a href="./sigin2.html">Sign-in</a></li>
+        <li><a href="./login2.html">Log-in</a></li>
+      </ul>
+    </nav>
+
+    <nav class="nav-2">
+      <ul>
+        <li><a href="">Lyrics</a></li>
+        <li><a href="">Trending</a></li>
+        <li><a href="">Promote</a></li>
+        <li><a href="">About-US</a></li>
+      </ul>
+    </nav>
+
+    <section class="sec-1">
+      <h2>Top Charts</h2>
+      <div class="grid-container">
+        <div class="item item-1"><img src="../images/Dandelion.jpg" alt=""></div>
+        <div class="item"><img src="../images/co2.png" alt=""></div>
+        <div class="item"><img src="../images/paro.png" alt=""></div>
+        <div class="item"><img src="../images/afsos.png" alt=""></div>
+        <div class="item"><img src="../images/shaky.jpg" alt=""></div>
+        <div class="item"><img src="../images/jhool.png" alt=""></div>
+      </div>
+    </section>
+    <section class="sec-1">
+        <h2>Top Charts</h2>
+        <div class="grid-container">
+          <div class="item item-1"><img src="../images/Dandelion.jpg" alt=""></div>
+          <div class="item"><img src="../images/co2.png" alt=""></div>
+          <div class="item"><img src="../images/paro.png" alt=""></div>
+          <div class="item"><img src="../images/afsos.png" alt=""></div>
+          <div class="item"><img src="../images/shaky.jpg" alt=""></div>
+          <div class="item"><img src="../images/jhool.png" alt=""></div>
+        </div>
+      </section>
+  </div>
+  <div>
+    <button type="button">Next Page</button>
+  </div>
+</body>
+</html>
